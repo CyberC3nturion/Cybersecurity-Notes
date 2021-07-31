@@ -1,0 +1,31 @@
+### Domains:
+
+A domain is a collection of objects organized onto a directory, allowing intercommunication of users and devices with a shared point of authentication and management. 
+
+Domains can be further extended into trees and further into forests, etc.
+
+### **Accounts:**
+
+In AD there are two types of accounts: **User Accounts,** and **Computer Accounts**
+
+**Computer Accounts**: created when ever a computer is added to a domain, they are self-managing with the exception of removing accounts for computers that are no longer in use.
+
+**User Accounts:** These are the cornerstone to securing access to computer, services, and other elements of a domain and directory. The user account contains a user ID and password that the directory uses to authenticate a user. 
+
+### **Groups**
+
+Active Directory Groups provide a mechanism to group accounts together to simplify the management of permissions within a domain. Using groups means that rather than having to carry out management against every single user and computer the management can be carried out at the group level and all members inherit from the group. Groups can be members of other groups allowing for nested permissions and simpler management if needed.
+
+### **Passwords**
+
+Passwords are the default attribute that Active Directory uses for authenticating accounts when a request is made. Active Directory allow controls to be placed on passwords to control elements such as:
+
+- Minimum password length - ensures that passwords are not too short.
+- Passwords must meet complexity requirements - ensures that passwords are suitably complex by requiring a specific mix of character types
+- Minimum password age - ensure that a password can be changed for a set number of days
+- Maximum password age - ensure that a password is changed on a regular basis as required.
+- Enforce password history - ensures that the same password is not reused within a set number of iterations.
+
+### **Group Policy Objects (GPO)**
+
+Group Policy Objects provide a multitude of options for configuring computers, users, and services across a domain. These objects provide a consistent manner for managing settings across the domain, which could be as small as a handful of devices and users up to many thousands. The settings can be changed centrally and are periodically applied to entities either at logon/boot/start or after a set interval.
